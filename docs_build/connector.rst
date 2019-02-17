@@ -36,13 +36,13 @@ From inside a cp-demo broker container (``docker-compose exec kafka1 bash``):
 
     .. sourcecode:: bash
 
-        cat /proc/cpuinfo > /etc/kafka/secrets/cpuinfo
+        echo "{\"schema\":null,\"payload\":\"test message\"}" > /etc/kafka/secrets/test_message
 
 #. Create a test script:
 
     .. sourcecode:: bash
 
-        kafka-console-producer --broker-list kafka1:10091 --topic file.data < /etc/kafka/secrets/cpuinfo
+        kafka-console-producer --broker-list kafka1:10091 --topic file.data < /etc/kafka/secrets/test_message
 
 
 ----------------------------

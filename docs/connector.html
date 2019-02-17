@@ -191,14 +191,14 @@ From inside a cp-demo broker container (<code class="docutils literal notranslat
 <ol class="arabic">
 <li><p class="first">Create a test file:</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat /proc/cpuinfo &gt; /etc/kafka/secrets/cpuinfo
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;{\&quot;schema\&quot;:null,\&quot;payload\&quot;:\&quot;test message\&quot;}&quot;</span> &gt; /etc/kafka/secrets/test_message
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p class="first">Create a test script:</p>
 <blockquote>
-<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kafka-console-producer --broker-list kafka1:10091 --topic file.data &lt; /etc/kafka/secrets/cpuinfo
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>kafka-console-producer --broker-list kafka1:10091 --topic file.data &lt; /etc/kafka/secrets/test_message
 </pre></div>
 </div>
 </div></blockquote>
@@ -301,7 +301,7 @@ inject message data into the command run.</p>
 
   
 
-  <script type="text/javascript" src=":static/js/theme.js"></script>
+  <script type="text/javascript" src="static/js/theme.js"></script>
 
   <script type="text/javascript">
       jQuery(function () {
