@@ -146,9 +146,9 @@
                         </goals>
                         <configuration>
                             <title>Kafka Connect Shell</title>
-                            <documentationUrl>https://github.com/thomaskwscott/kafka-connect-shell-sink/wiki</documentationUrl>
+                            <documentationUrl>https://thomaskwscott.github.io/kafka-connect-shell-sink</documentationUrl>
                             <description>
-                                The Shell sink connector allows you to run shell commands triggered by messages from Kafka
+                                The Shell sink connector allows you to run shell commands triggered and parameterized by messages from Kafka
                             </description>
                             <logo>logos/shell.png</logo>
 
