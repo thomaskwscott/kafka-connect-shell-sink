@@ -156,6 +156,7 @@
                             <supportSummary>Support is provided as best effort only. Please register any issues in the github project.</supportSummary>
                             <supportUrl>https://github.com/thomaskwscott/kafka-connect-shell-sink/issues</supportUrl>
                             <supportLogo>logos/shell.png</supportLogo>
+                            <sourceUrl>https://github.com/thomaskwscott/kafka-connect-shell-sink</sourceUrl>
 
                             <ownerUsername>thomaskwscott</ownerUsername>
                             <ownerType>user</ownerType>
@@ -172,7 +173,7 @@
                             </tags>
                             
 
-                            <confluentControlCenterIntegration>false</confluentControlCenterIntegration>
+                            <confluentControlCenterIntegration>true</confluentControlCenterIntegration>
                         </configuration>
                     </execution>
                 </executions>
