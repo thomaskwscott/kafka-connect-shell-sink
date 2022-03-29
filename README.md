@@ -5,7 +5,7 @@ kafka-connect-shell-sink is a [Kafka Connector](http://kafka.apache.org/document
 for invoking Shell commands. The Sink connector invokes shell commands using parameters from messages 
 on an input Kafka topic
 
-Documentation for this connector is here: https://www.confluent.io/hub/thomaskwscott/kafka-connect-shell-sink
+Documentation for this connector is here: https://thomaskwscott.github.io/kafka-connect-shell-sink/index.html
 
 # Development
 
